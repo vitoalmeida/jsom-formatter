@@ -1,40 +1,54 @@
-# Arquivos não formatados
+# JSON Parser - Teses e Dissertações
 
-Use este formato nos arquivos não formatados
+Este repositório contém um script Python para parsear o conteúdo de arquivos não formatados de teses e dissertações, estruturando-os em um formato JSON legível e organizado. O script identifica padrões específicos no texto para extrair informações como área de interesse, autor, título, programa de pós-graduação, instituição de ensino superior (IES), orientador, coorientador e linha de pesquisa.
 
-### Conteúdo:
+## Funcionalidades
 
-`{tipo}{ano}.json`
+- Leitura de arquivos não formatados (`.json`) contendo dados de teses e dissertações.
+- Extração e estruturação de informações como área, autor, título, programa, IES, orientador, coorientador e pesquisa.
+- Geração de um arquivo JSON unificado com todos os dados estruturados.
 
-Exemplos:
+## Como Utilizar
 
-`MH2020.json`
-`TP2022.json`
+1. Coloque seus arquivos não formatados na pasta `unformatted-files`.
+2. Execute o script principal: `python3 main.py`
+3. O resultado será gerado no arquivo `result.json` na raiz do projeto.
 
-### Conteúdo:
+## Estrutura do Projeto
 
-O conteúdo deve estar desta forma:
+- `unformatted-files/`: Pasta para colocar os arquivos não formatados.
+- `main.py`: Script Python principal.
+- `result.json`: Arquivo de saída com os dados estruturados.
+
+## Requisitos
+
+- Python 3.x
+
+## Exemplo de Uso
+
+1. Adicione um arquivo `MH2021.json` na pasta `unformatted-files`.
+
+**Obs.:** O conteúdo do arquivo deve estar neste padrão:
 
 ```
-Área: Administração Pública e de Empresas, Ciências Contábeis e Turismo
-Autor: Nádia Campos Pereira Bruhn
-Tese: Investimento direto estrangeiro e a política industrial: um estudo dos efeitos de transbordamentos em países da América Latina
-Orientadora: Cristina Lelis Leal Calegario
-Programa de Pós-Graduação em Administração da UFLA
-Pesquisa: Investimento direto estrangeiro e a política industrial: um estudo dos efeitos de transbordamentos em países da América Latina.pdf
+Área: lorem ipsum
+Autor: lorem ipsum
+Tese: lorem ipsum
+Orientadora: lorem ipsum
+Programa: lorem ipsum
+Pesquisa: lorem ipsum
+
+Área: lorem ipsum
+Autor: lorem ipsum
+Tese: lorem ipsum
+Orientadora: lorem ipsum
+Programa: lorem ipsum
+Pesquisa: lorem ipsum
 ```
 
-### Conteúdo:
+3. Execute o script.
+4. Verifique o arquivo `result.json` para ver os dados estruturados.
 
-```
-{
-    "areaOfInterest": false,
-    "type": "TP",
-    "year": "2016",
-    "research": "Item não pesquisado",
-    "area": ["Antropologia", "Arqueologia"],
-    "author": "Laura Rodrigues Santonieri",
-    "thesisTitle": "Agrobiodiversidade e Conservação Ex Situ: Reflexões sobre conceitos e práticas a partir do caso da Embrapa/Brasil",
-    "advisor": "Mauro William Barbosa de Almeida"
-  },
-```
+## Licença
+
+[MIT](https://choosealicense.com/licenses/mit/)

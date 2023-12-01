@@ -59,11 +59,11 @@ def parse_file_content(content, file_type, file_year):
     return structured_data
 
 def main():
-    input_folder = 'files'
+    input_folder = 'unformatted-files'
     output_file = 'result.json'
     all_data = []
 
-    # Read files from the folder
+    # Read unformatted files from the folder
     for filename in os.listdir(input_folder):
         if filename.endswith('.json'):
             with open(os.path.join(input_folder, filename), 'r', encoding='utf-8') as file:
