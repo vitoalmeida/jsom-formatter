@@ -14,11 +14,23 @@ Este repositório contém um script Python para parsear o conteúdo de arquivos 
 2. Execute o script principal: `python3 main.py`
 3. O resultado será gerado no arquivo `result.json` na raiz do projeto.
 
-## Estrutura do Projeto
+**Obs.:** O conteúdo do arquivo dentro da pasta `unformatted-files` deve estar neste padrão:
 
-- `unformatted-files/`: Pasta para colocar os arquivos não formatados.
-- `main.py`: Script Python principal.
-- `result.json`: Arquivo de saída com os dados estruturados.
+```
+Área: lorem ipsum
+Autor: lorem ipsum
+Tese: lorem ipsum
+Orientadora: lorem ipsum
+Programa: lorem ipsum
+Pesquisa: lorem ipsum
+
+Área: lorem ipsum
+Autor: lorem ipsum
+Tese: lorem ipsum
+Orientadora: lorem ipsum
+Programa: lorem ipsum
+Pesquisa: lorem ipsum
+```
 
 ## Requisitos
 
@@ -27,27 +39,8 @@ Este repositório contém um script Python para parsear o conteúdo de arquivos 
 ## Exemplo de Uso
 
 1. Adicione um arquivo `MH2021.json` na pasta `unformatted-files`.
-
-**Obs.:** O conteúdo do arquivo deve estar neste padrão:
-
-```
-Área: lorem ipsum
-Autor: lorem ipsum
-Tese: lorem ipsum
-Orientadora: lorem ipsum
-Programa: lorem ipsum
-Pesquisa: lorem ipsum
-
-Área: lorem ipsum
-Autor: lorem ipsum
-Tese: lorem ipsum
-Orientadora: lorem ipsum
-Programa: lorem ipsum
-Pesquisa: lorem ipsum
-```
-
-3. Execute o script.
-4. Verifique o arquivo `result.json` para ver os dados estruturados.
+2. Execute o script.
+3. Verifique o arquivo `result.json` para ver os dados estruturados.
 
 ## Licença
 
